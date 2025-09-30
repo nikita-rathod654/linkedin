@@ -19,12 +19,15 @@ const __dirname = path.resolve();
 
 if (process.env.NODE_ENV !== "production") {
 	app.use(
-		cors({
-			origin: "http://localhost:5173",
-			 'https://linkedin-kappa-pearl.vercel.app'
-			credentials: true,
-		})
-	);
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://linkedin-kappa-pearl.vercel.app"
+    ],
+    credentials: true,
+  })
+);
+
 }
 
 app.use(express.json({ limit: "50mb" }));
