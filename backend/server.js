@@ -21,6 +21,7 @@ if (process.env.NODE_ENV !== "production") {
 	app.use(
 		cors({
 			origin: "http://localhost:5173",
+			 'https://linkedin-kappa-pearl.vercel.app'
 			credentials: true,
 		})
 	);
