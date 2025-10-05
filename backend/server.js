@@ -20,7 +20,7 @@ const __dirname = path.resolve();
 const corsOptions = {
   origin: [
     "http://localhost:5173",
-    "https://linkedin-kappa-pearl.vercel.app"
+    "https://cloneproj.vercel.app"
   ],
   credentials: true,
 };
