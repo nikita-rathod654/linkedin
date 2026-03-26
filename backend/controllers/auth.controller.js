@@ -42,7 +42,7 @@ export const signup = async (req, res) => {
       httpOnly: true,
       maxAge: 3 * 24 * 60 * 60 * 1000,
       sameSite: "none",
-      secure: true, // ✅ Always true for cross-origin HTTPS
+      secure: true, //  Always true for cross-origin HTTPS
     });
 
     res.status(201).json({ message: "User registered successfully" });
